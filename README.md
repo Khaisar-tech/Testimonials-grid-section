@@ -39,7 +39,7 @@ Users should be able to:
 
 ### 🔗 Links
 
-- **Live Site URL:** (https://khaisar-tech.github.io/Testimonials-grid-section/))
+- **Live Site URL:** ("https://khaisar-tech.github.io/Testimonials-grid-section/" target="_blank"))
 
 ---
 
