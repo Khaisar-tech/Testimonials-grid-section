@@ -1,0 +1,268 @@
+:root {
+  --purple: hsl(263, 55%, 52%);
+  --lightpurple: hsl(264, 82%, 80%);
+  --fontcolor: hsl(0, 0%, 100%);
+  --darkgrey: hsl(217, 19%, 35%);
+  --darkblue: hsl(219, 29%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.grid {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "first first second third"
+    "fourth fifth fifth third";
+  gap: 1.5625rem;
+  margin: 1.25rem;
+}
+
+h2 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.items {
+  border-radius: 0.625rem;
+  padding: 0.625rem 1.5625rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  box-shadow: 0.625rem 0.625rem 1.5625rem rgba(0, 0, 0, 0.4);
+}
+
+.item1 {
+  grid-area: first;
+  position: relative;
+  background-color: var(--purple);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  color: var(--fontcolor);
+}
+
+.item1 h2 {
+  position: relative;
+  z-index: 10;
+}
+
+.item1 .svg {
+  position: absolute;
+  right: 7%;
+  top: 0%;
+  z-index: 1;
+}
+
+.item1 span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.625rem;
+}
+
+.item1 .image1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3.75rem;
+  border: 0.125rem solid var(--lightpurple);
+  margin-right: 1.25rem;
+}
+
+.item1 h1 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin: 0.3125rem;
+  position: relative;
+  z-index: 2;
+}
+
+.item2 {
+  grid-area: second;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  background-color: var(--darkgrey);
+  color: var(--fontcolor);
+}
+
+.item2 span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.625rem;
+}
+
+.item2 h1 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin: 0.3125rem;
+}
+
+.item2 .image2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3.75rem;
+  margin-right: 1.25rem;
+}
+
+.item2 p {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.item3 {
+  grid-area: fourth;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  color: var(--darkgrey);
+  background-color: var(--fontcolor);
+}
+
+.item3 span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.625rem;
+}
+
+.item3 h1 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.item3 p {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+
+.item3 .image3 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3.75rem;
+  margin-right: 1.25rem;
+}
+
+.item4 {
+  grid-area: fifth;
+  background-color: var(--darkblue);
+  color: var(--fontcolor);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.item4 .image4 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3.75rem;
+  margin-right: 1.25rem;
+  border: 0.125rem solid var(--lightpurple);
+}
+
+.item4 span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.625rem;
+}
+
+.item4 h1 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.item4 h2 {
+  font-weight: 500;
+}
+
+.item4 p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+  color: var(--fontcolor);
+}
+
+.item5 {
+  grid-area: third;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  color: var(--darkgrey);
+  background-color: var(--fontcolor);
+}
+
+.item5 .image5 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3.75rem;
+  margin-right: 1.25rem;
+}
+
+.item5 span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.625rem;
+}
+
+.item5 h1 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.item5 h2 {
+  font-weight: 600;
+}
+
+.item5 p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 855px) {
+ @media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "first second"
+      "third fourth"
+      "fifth fifth";
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "first"
+      "second"
+      "third"
+      "fourth"
+      "fifth";
+  }
+}
+
+}
