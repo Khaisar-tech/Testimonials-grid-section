@@ -39,8 +39,7 @@ Users should be able to:
 
 ### 🔗 Links
 
-- **Solution URL:** [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/testimonials-grid-html-css-grid-rem-fonts)  
-- **Live Site URL:** [Live Demo on GitHub Pages](https://yourusername.github.io/testimonials-grid-section/)
+- **Live Site URL:** (https://khaisar-tech.github.io/Testimonials-grid-section/))
 
 ---
 
